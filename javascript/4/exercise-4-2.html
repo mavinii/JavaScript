@@ -26,20 +26,12 @@
 
 <body>
     <div class="container col-md-8 offset-md-2">
-        <h1><b>Exercise 4-1</b>: JavaScript Functions</h1>
+        <h1><b>Exercise 4-2</b>: JavaScript Functions</h1>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla exercitationem ipsum enim natus soluta rem eos? In dicta eius, reprehenderit illo odit mollitia nulla ex et odio minus expedita numquam! minus expedita numquam!</p>
 
-		<div class="js-box">
-
-			<script>
-                // This is my first function in JS
-                function sayHello() {
-                    window.alert("Welcome to my web page.");
-                }
-			</script>
-
-            <!-- Calling the function "sayHello" with onclick event -->
-            <button onclick="sayHello()">Click to display greeting</button>
+        <!-- This buttom will be called by JS -->
+		<div class="js-box">                
+            <button id="btnGreeting">Click to display message</button>
 		</div>
 
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla exercitationem ipsum enim natus soluta rem eos? In dicta eius, reprehenderit illo odit mollitia nulla ex et odio minus expedita numquam! minus expedita numquam!</p>
@@ -47,7 +39,13 @@
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla exercitationem ipsum enim natus soluta rem eos? In dicta eius, reprehenderit illo odit mollitia nulla ex et odio minus expedita numquam! minus expedita numquam!</p>
     </div>
 
-
+    <!-- Js on the bellow -->
+    <script>
+        document.getElementById("btnGreeting").addEventListener("click", sayHello);
+        function sayHello(){
+            alert("Welcome to the page 4.2")
+        }
+    </script>
 
     <!-- jQuery library -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
